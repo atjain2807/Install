@@ -1,18 +1,25 @@
 JDK Installation
 
-1.Update the repositories: $ sudo apt-get update
+1.Update the repositories:
 
-2.Install OpenJDK $ sudo apt-get install openjdk-8-jdk -y
+        $ sudo apt-get update
 
-3.Verify the version of the JDK $ java -version
+2.Install OpenJDK 
 
-    openjdk version "1.8.0_252" OpenJDK Runtime Environment (build 1.8.0_252-8u252-b09-1~16.04-b09) OpenJDK 64-Bit Server VM (build 25.252-b09, mixed mode)
+        $ sudo apt-get install openjdk-8-jdk -y
 
-4.If you have multiple Java installations to change the default version, use the update-alternatives tool as shown below: $ sudo update-alternatives --config java
+3.Verify the version of the JDK 
+        $ java -version
 
-    Output:- There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java Nothing to configure.
+        openjdk version "1.8.0_252" OpenJDK Runtime Environment (build 1.8.0_252-8u252-b09-1~16.04-b09) OpenJDK 64-Bit Server VM (build 25.252-b09, mixed mode)
 
-5.Set the JAVA_HOME Environment Variable OpenJDK 8 is located at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java Copy the installation path of your preferred installation. Next, open the /etc/environment file
+4.If you have multiple Java installations to change the default version, use the update-alternatives tool as shown below: 
+        $ sudo update-alternatives --config java
+
+        Output:- There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java Nothing to configure.
+
+5.Set the JAVA_HOME Environment Variable OpenJDK 8 is located at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java 
+  Copy the installation path of your preferred installation. Next, open the /etc/environment file
 
     $ sudo vi /etc/environment
 
