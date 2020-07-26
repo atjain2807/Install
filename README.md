@@ -29,7 +29,8 @@ Maven Installation
 
     Install Apache Maven This example shows version 3.6.3. Substitute the download URL for the most recent version of Apache Maven from the official website. Choose the "Binary     tar.gz archive". Official Website :- https://maven.apache.org/download.cgi
 
-    $ cd /opt/ $ wget http://apache.mirrors.pair.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+    $ cd /opt/ 
+    $ wget http://apache.mirrors.pair.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
 
     Once the download has completed, extract the downloaded archive. $ sudo tar -xvzf apache-maven-3.6.3-bin.tar.gz
 
@@ -48,8 +49,10 @@ Maven Installation
         $ sudo chmod +x /etc/profile.d/mavenenv.sh $ source /etc/profile.d/mavenenv.sh
 
 Verify installation Check the version of the Apache Maven. 
-      $ mvn --version
-      The output will be similar to this, depending on your version. 
-      Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f) 
-      Maven home: /opt/maven 
-      Java version:         1.8.0_252, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre Default locale: en_US, platform encoding: UTF-8 OS name: "linux",          version: "4.4.0-1109-aws", arch: "amd64", family: "unix"
+       $ mvn --version
+       
+       The output will be similar to this, depending on your version. 
+        Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f) 
+        Maven home: /opt/maven 
+        Java version:         1.8.0_252, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre 
+        Default locale: en_US, platform encoding: UTF-8 OS name: "linux",version: "4.4.0-1109-aws", arch: "amd64", family: "unix"
