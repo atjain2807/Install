@@ -44,7 +44,8 @@ Maven Installation
      
      $ sudo apt-get update
 
-   Install Apache Maven This example shows version 3.6.3. Substitute the download URL for the most recent version of Apache Maven from the official website. Choose the "Binary      tar.gz archive". Official Website :- https://maven.apache.org/download.cgi
+2.Install Apache Maven 
+   This example shows version 3.6.3. Substitute the download URL for the most recent version of Apache Maven from the official website. Choose the "Binary tar.gz archive".          Official Website :- https://maven.apache.org/download.cgi
 
     $ cd /opt/ 
     $ wget http://apache.mirrors.pair.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
@@ -57,7 +58,7 @@ Maven Installation
     
     $ sudo mv apache-maven-3.6.3 maven
 
-2.Set Up Environment Variables
+3.Set Up Environment Variables
    Set up the environment variables M2_HOME and PATH by creating mavenenv.sh in /etc/profile.d/. 
     
     $ sudo vi /etc/profile.d/mavenenv.sh
@@ -72,7 +73,7 @@ Maven Installation
     $ sudo chmod +x /etc/profile.d/mavenenv.sh 
     $ source /etc/profile.d/mavenenv.sh
 
-3.Verify installation Check the version of the Apache Maven. 
+4.Verify installation Check the version of the Apache Maven. 
     
     $ mvn --version
        
