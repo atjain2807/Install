@@ -19,8 +19,11 @@ JDK Installation
 
         Output:- There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java Nothing to configure.
 
-5.Set the JAVA_HOME Environment Variable OpenJDK 8 is located at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java 
-  Copy the installation path of your preferred installation. Next, open the /etc/environment file
+5.Set the JAVA_HOME Environment Variable 
+
+  OpenJDK 8 is located at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java 
+  Copy the installation path of your Java installation proceeding till /bin/java 
+  Next, open the /etc/environment file
 
         $ sudo vi /etc/environment
 
