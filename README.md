@@ -61,6 +61,7 @@ Maven Installation
     $ sudo mv apache-maven-3.6.3 maven
 
 3.Set Up Environment Variables
+
    Set up the environment variables M2_HOME and PATH by creating mavenenv.sh in /etc/profile.d/. 
     
     $ sudo vi /etc/profile.d/mavenenv.sh
