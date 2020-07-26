@@ -13,7 +13,8 @@ JDK Installation
 
         openjdk version "1.8.0_252" OpenJDK Runtime Environment (build 1.8.0_252-8u252-b09-1~16.04-b09) OpenJDK 64-Bit Server VM (build 25.252-b09, mixed mode)
 
-4.If you have multiple Java installations to change the default version, use the update-alternatives tool as shown below: 
+4.If you have multiple Java installations to change the default version, use the update-alternatives tool as shown below:
+
         $ sudo update-alternatives --config java
 
         Output:- There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java Nothing to configure.
@@ -21,13 +22,17 @@ JDK Installation
 5.Set the JAVA_HOME Environment Variable OpenJDK 8 is located at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java 
   Copy the installation path of your preferred installation. Next, open the /etc/environment file
 
-    $ sudo vi /etc/environment
+        $ sudo vi /etc/environment
 
-    Add the following line, at the end of the file JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+        Add the following line, at the end of the file JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 
-6.Apply the Changes to environment File $ source /etc/environment
-
-    Verify the Changes applied $ echo $JAVA_HOME
+6.Apply the Changes to environment File 
+    
+        $ source /etc/environment
+    
+7.Verify the Changes applied 
+   
+        $ echo $JAVA_HOME
     
     
 Maven Installation
