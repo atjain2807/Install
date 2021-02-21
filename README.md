@@ -90,12 +90,16 @@ Maven Installation
 Jenkins Installation
         
 1.Add the repository key to the system
+        
         wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+        
 2.Append the Debian package repository address to the server’s sources.list
+        
         sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
         /etc/apt/sources.list.d/jenkins.list'
         
 3.Update using Package Manager & Install Jenkins and its dependencies
+        
         sudo apt-get update
         sudo apt-get install jenkins
         systemctl status jenkins
