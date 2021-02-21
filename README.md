@@ -86,3 +86,14 @@ Maven Installation
     Maven home: /opt/maven 
     Java version:         1.8.0_252, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre 
     Default locale: en_US, platform encoding: UTF-8 OS name: "linux",version: "4.4.0-1109-aws", arch: "amd64", family: "unix"
+
+Jenkins Installation
+        
+        wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+        sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+        /etc/apt/sources.list.d/jenkins.list'
+        
+        sudo apt-get update
+        sudo apt-get install jenkins
+        systemctl status jenkins
+
