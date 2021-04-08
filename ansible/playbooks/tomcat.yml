@@ -16,11 +16,11 @@
       group: tomcat
    - name: Download Tomcat
      #get_url: url=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.54/bin/apache-tomcat-8.5.54.tar.gz
-     get_url: url=https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.63/bin/apache-tomcat-8.5.63.tar.gz dest=/opt/apache-tomcat-8.5.63.tar.gz
+     get_url: url=https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.65/bin/apache-tomcat-8.5.65.tar.gz dest=/opt/apache-tomcat-8.5.65.tar.gz
    - name: Extract archive
-     command: /bin/tar xvf /opt/apache-tomcat-8.5.63.tar.gz -C /opt
+     command: /bin/tar xvf /opt/apache-tomcat-8.5.65.tar.gz -C /opt
    - name: create tomcat home
-     command: mv /opt/apache-tomcat-8.5.63 /opt/tomcat
+     command: mv /opt/apache-tomcat-8.5.65 /opt/tomcat
    - name: Change ownership of Tomcat installation
      file:
       path: /opt/tomcat
